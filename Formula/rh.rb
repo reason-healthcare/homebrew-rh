@@ -1,22 +1,22 @@
 class Rh < Formula
   desc "Unified CLI for FHIR processing tools"
   homepage "https://github.com/reason-healthcare/rh"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/reason-healthcare/rh/releases/download/v0.2.4/rh-aarch64-apple-darwin.tar.gz"
-      sha256 "44ae70e9205be10c208e34532f8c987e2433b9c8a8c96075d0de7e2c323adcb6"
+      url "https://github.com/reason-healthcare/rh/releases/download/v0.2.5/rh-aarch64-apple-darwin.tar.gz"
+      sha256 "2302f8e2b0e66b51403a96b0dfbf3c54fabeb95c764d74dfccd70f94a6e4d261"
     else
-      url "https://github.com/reason-healthcare/rh/releases/download/v0.2.4/rh-x86_64-apple-darwin.tar.gz"
-      sha256 "f05c757846657745859fc57eb65a62c3e86b2bde4f4bd4187da2b782d71b7d4a"
+      url "https://github.com/reason-healthcare/rh/releases/download/v0.2.5/rh-x86_64-apple-darwin.tar.gz"
+      sha256 "bdcf2af04b3914d52fa31b83ece78d20abbae157257336446c806386d9d69896"
     end
   end
 
   on_linux do
-    url "https://github.com/reason-healthcare/rh/releases/download/v0.2.4/rh-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "634b79e449ff68c3e4f4fbf66fc56a34cfe2d59d1aeafd40f3df0bae165d8de6"
+    url "https://github.com/reason-healthcare/rh/releases/download/v0.2.5/rh-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "14387b53f8d4a3cf07b95e32f16e6f3fa2cc3a1304ee42d2005be4c18881418a"
   end
 
   def install
